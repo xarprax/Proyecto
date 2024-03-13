@@ -1,0 +1,197 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'NCAA Wisconsin Badger Bold' , sans-serif;
+    src: url('../assets/fonts/NCAA_WISCONSIN_BADGER_BOLD.ttf') format('truetype');
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../src/nature2.jpg');
+    background-size: cover;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.wrapper{
+    width: 600px;
+    background: transparent;
+    /* border: 2px solid rgb(255, 255, 255, .5); */
+    backdrop-filter: blur(2.5px);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper-login, .wrapper-register {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 60vw;
+    min-height: 85vh;
+    background: transparent;
+    /* border: 2px solid rgb(255, 255, 255, .5); */
+    backdrop-filter: blur(2.5px);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1, .wrapper-login h1, .wrapper-register {
+    font-size: 36px;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.wrapper .input-box{
+    position: relative;
+    /* width: 30px; */
+    height: 50px;
+    margin-top: 30px ; 
+    margin-left: 10%;
+    flex-basis: 40%;
+    
+}
+
+.wrapper-login .input-box-j, .wrapper-register .input-box-j {
+    position: relative;
+    /* width: 30px; */
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 10%;
+    flex-basis: 40%;
+
+}
+
+.wrapper .input-box-message {
+    position: relative;
+    height: 400px;
+    margin-left: -20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.input-box, .input-box-j{
+
+    display: flex;
+    justify-content: center;
+}
+
+.input-box input, .input-box-j input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 20px 25px 20px;
+}
+
+.input-box-message {
+    background: transparent;
+    border: none;
+    outline: none;
+    /* border: 2px solid white; */
+    border-radius: 40px;
+    color: transparent;
+    padding: 20px 25px 20px;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.input-box-message textarea{
+    background: transparent;
+        border: none;
+        outline: none;
+        /* border: 2px solid white; */
+        border-radius: 40px;
+        color: white;
+        padding: 20px 25px 20px;
+        width: 100%;
+        height: 300px;
+        backdrop-filter: blur(2.5px);
+        
+}
+
+
+.input-box input::placeholder {
+    color:  white;
+}
+
+.input-box-message input::placeholder {
+    color: white;
+    font-size: larger;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.input-box-j j {
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper-login .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    margin: -15px 10% 15px;
+}
+
+.remember-forgot label {
+    accent-color: white;
+    margin-right: 5px;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    color: #6D4A22;
+    margin-right: 10px;
+}
+
+.wrapper .bttn, .wrapper-login .bttn {
+    width:  100%;
+    height: 45px;
+    margin-left: 9%;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.wrapper-login .register-link{
+    font-size: smaller;
+    text-align: center;
+    margin: 20px 10% 15px;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
