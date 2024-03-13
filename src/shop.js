@@ -116,17 +116,17 @@ function removeOneItem() {
 function getPrice(product) {
   switch (product) {
     case "pateos":
-      return 20;
+      return 40;
     case "gastronomica":
-      return 80;
+      return 100;
     case "helicoptero":
-      return 150;
+      return 300;
     case "bicis":
-      return 50;
+      return 70;
     case "parapente":
-      return 85;
+      return 150;
     case "acuatica":
-      return 90;
+      return 60;
     default:
       return 0;
   }
