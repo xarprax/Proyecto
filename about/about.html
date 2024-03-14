@@ -6,7 +6,15 @@
     <title>CANAVENTURAS</title>
     <link rel="stylesheet" href="about.css">
     <header>
-
+        <a href="/index.html"><img class="logo" src="/assets/Images/logo_verde_35490C.png" alt="Fondo"></a>
+        <p class="slogan">Rutas y actividades en Canarias</p>
+        <input type="text" id="buscar" placeholder=" Buscar aventuras">
+        <button>Buscar</button>
+        <nav>
+            <a href="/shop/shop.html">Tienda</a>
+            <a href="/form/form.html">Contacto</a>
+            <a href="/about/about.html">Nosotros</a>
+        </nav>
     </header>
 </head>
 
@@ -22,11 +30,11 @@
     </div>
 </section>
 
-    <section class="values">
-        <div class="container">
-            <h1>VALORES</h1>
-            <div class="value-grid">
-            <div class="value" id="inclusividad">
+<section class="values">
+    <div class="container">
+        <h1>VALORES</h1>
+    <div class="value-grid">
+    <div class="value" id="inclusividad">
                 <h3>Inclusividad</h3>
                 <p>Creamos experiencias que permiten a todas las personas, descubrir y disfrutar plenamente de Gran Canaria.</p>
             </div>
@@ -53,7 +61,7 @@
     </section>
 
     <section class="team">
-        <h1>EQUIPO</h1>
+        <h2>EQUIPO</h2>
         <div class="team-container">
             <div class="team-member">
                 <img src="../src/foto-Bea.jpeg" alt="Bea">
@@ -100,18 +108,47 @@
         </div>   
 </section>
 
-<section id="customer-reviews">
-    <div class="reviews-container">
-        <h2>Opiniones de nuestros clientes</h2>
-        <div class="review active">"¡Excelente servicio! Recomendado 100%." - Juan Pérez</div>
-        <div class="review">"Una experiencia increíble, la atención al cliente es de primera." - María Gómez</div>
-        <div class="review">"Rápida entrega y productos de calidad. Volveré a comprar aquí." - Carlos López</div>
-        <button id="prev">Anterior</button>
-        <button id="next">Siguiente</button>
-    </div>
-</section>
 
 <script src="./about.js"></script>
     
 </body>
+
+<footer>
+    <span>
+        <table class="links">
+            <tr>
+                <th>DESCARGA LA APP</th>
+                <th>SIGUENOS</th>
+                <th>CONOCENOS</th>
+            </tr>
+            <tr>
+                <td><a href="https://play.google.com/store/games?device=windows"><img
+                            src="/assets/iconos/google-play-badge-es.png" alt="Android"></a>
+                    <a href="https://www.apple.com/es/store"><img src="/assets/iconos/apple-store.png" alt="Apple">
+                </td></a>
+                <td><a href="https://www.instagram.com/"><img src="/assets/iconos/icon-instagram.png"
+                            alt="Instagram"></a>
+                    <a href="https://twitter.com"><img src="/assets/iconos/icon-twitter.png" alt="Twitter"></a>
+                    <a href="https://www.tiktok.com/es/"><img src="/assets/iconos/tiktok.png" alt="Tiktok"></a>
+                </td></a>
+                <td><a href="/shop/shop.html"><img src="/assets/iconos/carrito.png" alt="Tienda"></a>
+                    <a href="/form/form.html"><img src="/assets/iconos/email.png" alt="Contacto"></a>
+                    <a href="/about/about.html"><img src="/assets/iconos/personas.png" alt="Nosotros"></a>
+                </td></a>
+            </tr>
+        </table>
+        <table cellspacing="30">
+            <tr>
+                <td>
+                    <p>© 2024 CanAventuras. Todos los derechos reservados.</p>
+                </td>
+                <nav>
+                    <td><a href="">Condiciones de uso</a> </td>
+                    <td><a href="">Privacidad</a> </td>
+                    <td><a href="">Política de cookies</a></td>
+                </nav>
+            </tr>
+        </table>
+    </span>
+</footer>
 </html>
