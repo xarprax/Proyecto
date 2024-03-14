@@ -131,7 +131,6 @@ section {
     padding: 10px 40px 10px 40px;
 }
 section:hover {
-    background-color: var(--third-color);
     border-radius: 25px;
     border-style: outset;
     margin-top: 50px;
