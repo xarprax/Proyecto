@@ -10,28 +10,30 @@ font-family: 'NCAA Wisconsin Badger Bold' , sans-serif;
 body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url('../src/nature2.jpg');
-    background-size: cover;
+    /* background-image: url('../src/nature2.jpg'); */
+    /* background-size: cover; */
 }
 
 form{
     display: flex;
     flex-wrap: wrap;
+    width: 60vw;
    
 }
 
 .wrapper{
-    width: 55vw; 
-    height: 60vh;
-    background: transparent;
+    /* width: 55vw; 
+    height: 60vh; */
+    background: white;
+    background-image: url(../src/imagen1.4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 10px 120px 90px 220px white inset;
     /* border: 2px solid rgb(255, 255, 255, .5); */
     backdrop-filter: blur(2.5px);
     color: white;
     border-radius: 10px;
-    padding: 10vh 10vw 10vh 10vw;
+    padding: 10vh 10vw 10vh 15vw;
 }
 
 .wrapper-login {
@@ -65,6 +67,8 @@ form{
     font-size: 36px;
     text-align: center;
     flex-basis: 100%;
+    color: black;
+    margin-left: 10%;
 }
 
 .wrapper .input-box{
@@ -90,7 +94,7 @@ form{
 .wrapper .input-box-message {
     position: relative;
     /* height: 400px; */
-    margin-left: 50px;
+    margin-left: 6vw;
     margin-bottom: 30px;
     margin-top: 30px;
     /* border: 2px solid rgb(255, 255, 255, .5); */
@@ -111,9 +115,9 @@ textarea{
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 40px;
-    color: white;
+    color: black;
     padding: 20px 25px 20px;
 }
 
@@ -121,7 +125,7 @@ textarea{
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 40px;
     color: transparent;
     width: 100%;
@@ -138,7 +142,7 @@ textarea{
         outline: none;
         /* border: 2px solid white; */
         border-radius: 40px;
-        color: white;
+        color: black;
         padding: 20px 25px 20px;
         width: 100%;
         height: 300px;
@@ -148,11 +152,11 @@ textarea{
 
 
 .input-box input::placeholder {
-    color:  white;
+    color:  black;
 }
 
 .input-box-message textarea::placeholder {
-    color: white;
+    color: black;
     font-size: larger;
 }
 
@@ -162,6 +166,7 @@ textarea{
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+    color: black;
 }
 .input-box-j j {
     position: absolute;
@@ -193,7 +198,8 @@ textarea{
     width:  100%;
     height: 45px;
     margin-left: 9%;
-    background: white;
+    background: black;
+    color: white;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -553,7 +559,7 @@ textarea{
      align-items: center;
      justify-content: space-between;
      background-size: cover;
-     height: 180px;
+     height: 15vh;
      margin-top: 30px;
      border-radius: 90px 0 90px 0;
  }
