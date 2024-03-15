@@ -12,10 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         showTestimonial();
     }
 
-    // Cambia el testimonio cada 5 segundos (5000 ms)
     setInterval(nextTestimonial, 5000);
-
-    // Muestra el primer testimonio al cargar la página
     showTestimonial();
 });
 
