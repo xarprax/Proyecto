@@ -313,6 +313,52 @@ img {
     font-weight: bold;
     border-radius: 5% 5% 5% 5%;
 }
+.testimonial-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial {
+    display: none;
+}
+
+.testimonial p {
+    display: inline-flex;
+    margin-top: 50px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial cite {
+    color: var(--second-color);
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.testimonial img {
+    height: 80px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.testimonial img:hover {
+    height: 200px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.testimonial.active {
+    display: block;
+}
 
 footer {
     background-image: url(/assets/Images/footer-islas.png);
