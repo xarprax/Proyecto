@@ -10,8 +10,7 @@ font-family: 'NCAA Wisconsin Badger Bold' , sans-serif;
 body{
     display: flex;
     flex-direction: column;
-    /* background-image: url('../src/nature2.jpg'); */
-    /* background-size: cover; */
+   
 }
 
 form{
@@ -22,8 +21,6 @@ form{
 }
 
 .wrapper{
-    /* width: 55vw; 
-    height: 60vh; */
     background: white;
     background-image: url(../src/imagen1.4.png);
     background-size: 100%;
@@ -39,28 +36,42 @@ form{
 .wrapper-login {
     display: flex;
     flex-wrap: wrap;
-    min-width: 60vw;
-    min-height: 85vh;
+    width: 60vw;
+    height: 65vh;
     background: transparent;
+    margin-left: 13vw;
     /* border: 2px solid rgb(255, 255, 255, .5); */
     backdrop-filter: blur(2.5px);
     color: white;
     border-radius: 10px;
-    padding: 30px 40px;
+    padding: 10vh 10vw 10vh 15vw;
+        /* margin-left: 20vw; */
+}
+
+.background-login, .background-register{
+    background-image: url(../src/imagen1.4.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: 10px 120px 90px 220px white inset;
 }
 
 .wrapper-register {
     display: flex;
     flex-wrap: wrap;
-    min-width: 60vw;
+    width: 60vw;
+    height: 65vh;
+    margin-left: 20vw;
+    /* min-width: 60vw;
     max-width: 80vw;
-    min-height: 85vh;
+    min-height: 85vh; */
     background: transparent;
+   margin-left: 13vw;
     /* border: 2px solid rgb(255, 255, 255, .5); */
     backdrop-filter: blur(2.5px);
     color: white;
     border-radius: 10px;
-    padding: 30px 40px;
+    /* padding: 30px 40px; */
+        padding: 10vh 10vw 10vh 15vw;
 }
 
 .wrapper h1, .wrapper-login h1, .wrapper-register h1 {
@@ -154,6 +165,9 @@ textarea{
 .input-box input::placeholder {
     color:  black;
 }
+.input-box password{
+    color: black;
+}
 
 .input-box-message textarea::placeholder {
     color: black;
@@ -174,18 +188,26 @@ textarea{
     top: 23px;
     transform: translateY(-50%);
     font-size: 20px;
+    color: black;
+    
 }
-
+.input-box-j Password{
+    color: black;
+}
+.input-box-j #password{
+    color: black;
+}
 .wrapper-login .remember-forgot{
-    display: flex;
     justify-content: space-between;
     font-size: small;
-    margin: -15px 10% 15px;
+    margin-top: -4vh;
+    margin-left: 4vw;
 }
 
 .remember-forgot label {
     accent-color: white;
     margin-right: 5px;
+    margin-top: -6vh;
 }
 
 .remember-forgot a:hover {
@@ -194,7 +216,7 @@ textarea{
     margin-right: 10px;
 }
 
-.wrapper .bttn, .wrapper-login .bttn, .wrapper-register .bttn {
+.wrapper .bttn, .wrapper-register .bttn {
     width:  100%;
     height: 45px;
     margin-left: 9%;
@@ -206,23 +228,55 @@ textarea{
     cursor: pointer;
     font-weight: 600;
 }
+.wrapper-login .bttn{
+    width: 70%;
+        height: 45px;
+        margin-left: 18%;
+        background: black;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        cursor: pointer;
+        font-weight: 600;
+        text-decoration: none;
+}
+
 
 .wrapper-login .register-link{
     font-size: smaller;
     text-align: center;
-    margin: 20px 10% 15px;
+   
+    margin-top: -2vw;
+        margin-left: 8vh;
 }
 
-.register-link p a {
+.wrapper-login .bttn a{
+    text-decoration: none;
     color: white;
+}
+
+.wrapper-register .bttn a {
+    text-decoration: none;
+    color: white;
+}
+
+.register-link, .link-a-login p a {
+    color: #35790C;
     text-decoration: none;
     font-weight: 600;
 }
 
-.register-link p a:hover{
-    text-decoration: underline;
+.register-link, .link-a-login p a:hover{
+    text-decoration: none;
+    color: black;
 }
 
+.link-a-login{
+    display: flex;
+    margin-left: 10%;
+    font-size: larger;
+}
 
  /* ----------------------- CSS DEL INDEX HTML ABAJO ---------------------------------------- */
 
