@@ -1,0 +1,613 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'NCAA Wisconsin Badger Bold' , sans-serif;
+    src: url('../assets/fonts/NCAA_WISCONSIN_BADGER_BOLD.ttf') format('truetype');
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* background-image: url('../src/nature2.jpg'); */
+    /* background-size: cover; */
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+   
+}
+
+.wrapper{
+    /* width: 55vw; 
+    height: 60vh; */
+    background: white;
+    background-image: url(../src/imagen1.4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 10px 120px 90px 220px white inset;
+    /* border: 2px solid rgb(255, 255, 255, .5); */
+    backdrop-filter: blur(2.5px);
+    color: white;
+    border-radius: 10px;
+    padding: 10vh 10vw 10vh 15vw;
+}
+
+.wrapper-login {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 60vw;
+    min-height: 85vh;
+    background: transparent;
+    /* border: 2px solid rgb(255, 255, 255, .5); */
+    backdrop-filter: blur(2.5px);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper-register {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 60vw;
+    max-width: 80vw;
+    min-height: 85vh;
+    background: transparent;
+    /* border: 2px solid rgb(255, 255, 255, .5); */
+    backdrop-filter: blur(2.5px);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1, .wrapper-login h1, .wrapper-register h1 {
+    font-size: 36px;
+    text-align: center;
+    flex-basis: 100%;
+    color: black;
+    margin-left: 10%;
+}
+
+.wrapper .input-box{
+    position: relative;
+    /* width: 30px; */
+    height: 50px;
+    margin-top: 30px ; 
+    margin-left: 10%;
+    flex-basis: 40%;
+    
+}
+
+.wrapper-login .input-box-j, .wrapper-register .input-box-j {
+    position: relative;
+    /* width: 30px; */
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 10%;
+    flex-basis: 40%;
+
+}
+
+.wrapper .input-box-message {
+    position: relative;
+    /* height: 400px; */
+    margin-left: 6vw;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    /* border: 2px solid rgb(255, 255, 255, .5); */
+
+}
+textarea{
+    resize: none;
+}
+.input-box, .input-box-j{
+
+    display: flex;
+    justify-content: center;
+}
+
+.input-box input, .input-box-j input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    color: black;
+    padding: 20px 25px 20px;
+}
+
+.input-box-message {
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    color: transparent;
+    width: 100%;
+    /* padding: 20px 25px 20px; */
+    /* min-width: 600px;
+    max-width: 600px;
+    min-height: 300px;
+    max-height: 300px; */
+}
+
+.input-box-message textarea{
+    background: transparent;
+        border: none;
+        outline: none;
+        /* border: 2px solid white; */
+        border-radius: 40px;
+        color: black;
+        padding: 20px 25px 20px;
+        width: 100%;
+        height: 300px;
+        backdrop-filter: blur(2.5px);
+        
+}
+
+
+.input-box input::placeholder {
+    color:  black;
+}
+
+.input-box-message textarea::placeholder {
+    color: black;
+    font-size: larger;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+}
+.input-box-j j {
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper-login .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    margin: -15px 10% 15px;
+}
+
+.remember-forgot label {
+    accent-color: white;
+    margin-right: 5px;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    color: #6D4A22;
+    margin-right: 10px;
+}
+
+.wrapper .bttn, .wrapper-login .bttn, .wrapper-register .bttn {
+    width:  100%;
+    height: 45px;
+    margin-left: 9%;
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.wrapper-login .register-link{
+    font-size: smaller;
+    text-align: center;
+    margin: 20px 10% 15px;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+
+ /* ----------------------- CSS DEL INDEX HTML ABAJO ---------------------------------------- */
+
+ :root {
+     --first-color: #35790C;
+     --second-color: #6d4a22;
+     --third-color: #e8ba88;
+ }
+
+ @font-face {
+     font-family: 'NCAA Wisconsin Badger Bold';
+     src: url('/assets/Fonts/NCAA\ Wisconsin\ Badger\ Bold.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ body {
+     font-family: 'NCAA Wisconsin Badger Bold', Verdana, Geneva, Tahoma, sans-serif
+ }
+
+ header {
+     background-image: url(/assets/Images/Cabecera\ web.png);
+     background-size: cover;
+     height: 220px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ header input {
+     margin-top: 120px;
+     height: 25px;
+     border: var(--second-color);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ header button {
+     background: var(--first-color);
+     border: var(--second-color);
+     border-style: groove;
+     margin-top: 120px;
+     margin-left: -30px;
+     width: 70px;
+     height: 30px;
+     color: #ffffff;
+
+ }
+
+ header button:hover {
+     background: var(--third-color);
+     border: var(--second-color);
+     border-style: groove;
+     margin-top: 120px;
+     margin-left: -30px;
+     width: 70px;
+     height: 30px;
+     color: var(--first-color);
+
+ }
+
+ .logo {
+     height: 350px;
+     width: auto;
+     margin-top: -15px;
+     margin-left: 10px;
+ }
+
+ .logo:hover {
+     height: 350px;
+     width: auto;
+     margin-top: -15px;
+     margin-left: 10px;
+     filter: hue-rotate(-45deg);
+ }
+
+ header nav {
+     display: flex;
+ }
+
+ header nav a {
+     text-decoration: none;
+     color: var(--first-color);
+     margin: 0 10px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: large;
+     font-weight: bold;
+     margin-top: 120px;
+ }
+
+ header nav a:hover {
+     text-decoration: underline;
+     color: var(--second-color);
+     margin: 0 10px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: larger;
+     font-weight: bold;
+     margin-top: 120px;
+ }
+
+ .slogan {
+     color: var(--second-color);
+     margin-top: 150px;
+     font-size: xx-large;
+     font-style: italic;
+ }
+
+
+ .iconos {
+     border: none;
+     height: 15vh;
+     margin-top: -5vh;
+ }
+
+
+ .color-change {
+     border: none;
+     height: 15vh;
+     margin-top: 3vh;
+     transition: filter 0.3s ease;
+ }
+
+ .color-change:hover {
+     filter: invert(50%);
+ }
+
+ /* main {
+     padding: 20px;
+ }
+
+ section {
+     background-color: white;
+     margin-top: 50px;
+     margin-bottom: 20px;
+     margin-left: 10vh;
+     margin-right: 10vh;
+     padding: 10px 40px 10px 40px;
+ }
+
+ section:hover {
+     border-radius: 25px;
+     border-style: outset;
+     margin-top: 50px;
+     margin-bottom: 20px;
+     margin-left: 10vh;
+     margin-right: 10vh;
+     padding: 10px 40px 10px 40px;
+ }
+
+
+ .beige h2 {
+     font-size: xx-large;
+     font-weight: bold;
+     color: var(--second-color);
+     text-align: center;
+     -webkit-text-stroke: 1px white;
+     text-transform: uppercase;
+     text-transform: uppercase;
+ }
+
+ .beige p {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: larger;
+     text-align: justify;
+     color: var(--first-color);
+     display: inline-flex;
+ }
+
+ .llamada {
+     font-weight: bold;
+     text-indent: 40px;
+ }
+
+ .image {
+     margin-top: 0px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .image img {
+     max-width: 20%;
+     margin-right: 20px;
+ }
+
+ .image p {
+     flex-grow: 1;
+ }
+
+ .texto {
+     margin-left: 150px;
+     margin-top: 120px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: var(--second-color);
+     border-color: #35790C;
+     text-align: center;
+ }
+
+ .texto p {
+     font-size: 20px;
+ }
+
+ table {
+     align-items: center;
+ }
+
+ .contenedor {
+     height: 400px;
+     margin: 42px;
+     width: 400px;
+     position: relative;
+     display: inline-flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .carta {
+     height: 100%;
+     width: 100%;
+     transition: all 1s;
+     transform-style: preserve-3d;
+     position: relative;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+     border-radius: 10%;
+
+ }
+
+ .carta:hover {
+     transform: rotateY(180deg);
+     border-radius: 7%;
+ }
+
+ .lado {
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background: var(--third-color);
+     backface-visibility: hidden;
+
+ }
+
+ .frente {
+     background-color: var(--second-color);
+     border-radius: 5%;
+ }
+
+ .frente h3 {
+     text-align: center;
+     -webkit-text-stroke: 1px white;
+     margin: 10px 0;
+     color: var(--first-color);
+     font-size: xx-large;
+ }
+
+ img {
+     height: 100%;
+     width: 100%;
+     position: relative;
+     border-radius: 0 0 5% 5%;
+
+ }
+
+ .carta img {
+     height: 100%;
+     width: 100%;
+     position: relative;
+     border-radius: 0 0 5% 5%;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+ }
+
+ .atras p {
+     margin: 25;
+     height: 204px;
+     text-decoration: none;
+     padding: 25px;
+     color: var(--second-color);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     text-align: justify;
+ }
+
+
+ .atras {
+     height: 115%;
+     width: 100%;
+     transform: rotateY(180deg);
+     border-radius: 5%;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+ }
+
+ .atras h3 {
+     display: block;
+     text-align: center;
+     -webkit-text-stroke: 1px white;
+     margin: 10px 0;
+     color: var(--first-color);
+     font-size: xx-large;
+
+ }
+
+ .atras a {
+     text-decoration: none;
+ }
+
+ .atras a:hover {
+     text-decoration: none;
+ }
+
+ .atras button {
+     display: flex;
+     justify-content: center;
+     width: 100px;
+     margin-left: 160px;
+     background-color: var(--first-color);
+     color: white;
+     font-size: larger;
+     font-weight: bold;
+     border-radius: 5% 5% 5% 5%;
+ }
+
+ .atras button:hover {
+     display: flex;
+     justify-content: center;
+     width: 100px;
+     margin-left: 160px;
+     background-color: var(--second-color);
+     color: white;
+     font-size: larger;
+     font-weight: bold;
+     border-radius: 5% 5% 5% 5%;
+ } */
+
+ footer {
+     background-image: url(/assets/Images/footer-islas.png);
+     padding: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-size: cover;
+     height: 240px;
+     margin-top: 30px;
+     border-radius: 90px 0 90px 0;
+ }
+
+ footer th {
+     color: var(--third-color);
+     font-size: x-large;
+     padding-top: 40px;
+     margin-left: 20px;
+ }
+
+ .links td {
+     border-right: 2px solid black;
+     padding: 20px;
+ }
+
+ .links td:last-child {
+     border-right: none;
+ }
+
+ footer p {
+     color: black;
+     margin-left: 8px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+
+ footer img {
+     height: 30px;
+     width: auto;
+     margin: 20px
+ }
+
+ footer img:hover {
+     height: 40px;
+     width: auto;
+     margin: 20px;
+ }
+
+
+ footer a {
+     color: black;
+     text-decoration: underline;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ footer a:hover {
+     color: var(--third-color);
+     text-decoration: none;
+ }
